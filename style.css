@@ -130,7 +130,7 @@ header ul li a:hover::after {
 }
 
 .image-column {
-    flex-basis: 35%;
+    flex-basis: 10%;
 }
 
 .image-column img {
@@ -143,40 +143,17 @@ header ul li a:hover::after {
     flex-basis: 50%;
 }
 
-.icons{
+.icons a{
+    margin:8px;
     text-decoration: none;
-    
-}
-
-.ig{
     font-size: 30px;
     color: red
 }
 
-.ig:hover{
-    font-size: 45px;
-    transition: 0.5s;
+.icons a:hover{
+    font-size: 40px;
+    transition: 0.3s;
+    color: whitesmoke;
 }
 
-.twit{
-    position: relative;
-    font-size: 30px;
-    color: red
-}
-.twit:hover{
-    font-size: 45px;
-    transition: 0.5s;
-}
-
-
-.git{
-    font-size: 30px;
-    color: red;
-
-    
-}
-.git:hover{
-    font-size: 45px;
-    transition: 0.5s;
-}
 
