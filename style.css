@@ -1,0 +1,182 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2024/06/22/16/55/ai-generated-8846672_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+
+}
+
+span {
+    color: red;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 10000;
+
+}
+
+header.sticky {
+    font-weight: 900;
+    padding: 5px;
+    background: rgb(135, 5, 5);
+
+}
+
+header .logo {
+    font-family: "Poppins", sans-serif;
+    position: ;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-size: 45px;
+
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    font-weight: 800;
+    position: relative;
+    list-style: none;
+
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.6s;
+
+}
+
+header.sticky .logo {
+    color: black;
+}
+
+header.sticky ul li a {
+    color: black;
+}
+
+header ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+header ul li a:hover::after {
+    width: 100%;
+}
+
+.container{
+    padding: 80px 5%;
+    color: white;
+}
+
+.header-txt {
+    padding: 10px;
+    margin-top: 30%;
+    color: white;
+}
+
+/*-------------ABOUT-------------------*/
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-column {
+    flex-basis: 35%;
+}
+
+.image-column img {
+    width: 120%;
+    height: 80%;
+    border-radius: 15px;
+}
+
+.about-column {
+    flex-basis: 50%;
+}
+
+.icons{
+    text-decoration: none;
+    
+}
+
+.ig{
+    font-size: 30px;
+    color: red
+}
+
+.ig:hover{
+    font-size: 45px;
+    transition: 0.5s;
+}
+
+.twit{
+    position: relative;
+    font-size: 30px;
+    color: red
+}
+.twit:hover{
+    font-size: 45px;
+    transition: 0.5s;
+}
+
+
+.git{
+    font-size: 30px;
+    color: red;
+
+    
+}
+.git:hover{
+    font-size: 45px;
+    transition: 0.5s;
+}
+
