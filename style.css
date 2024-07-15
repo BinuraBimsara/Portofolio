@@ -117,7 +117,8 @@ header ul li a:hover::after {
     font-family: 'Poppins';
     min-width: 280px;
 }
-span{
+
+span {
     font-size: 60px;
 }
 
@@ -128,7 +129,7 @@ span{
 
 .header-txt span::before {
     content: "...";
-    color: green;
+    color: red;
     animation: words 20s infinite;
 
 }
@@ -220,6 +221,9 @@ span{
     color: white;
 }
 
+
+
+
 /*-------------ABOUT-------------------*/
 
 .row {
@@ -229,12 +233,12 @@ span{
 }
 
 .image-column {
-    flex-basis: 10%;
+    flex-basis: 30%;
 }
 
 .image-column img {
-    width: 120%;
-    height: 80%;
+    width: 100%;
+    height: 90%;
     border-radius: 15px;
 }
 
@@ -242,21 +246,10 @@ span{
     flex-basis: 35%;
 }
 
-.icons a {
-    margin: 8px;
-    text-decoration: none;
-    font-size: 30px;
-    color: red
-}
 
-.icons a:hover {
-    transition: 0.3s;
-    color: whitesmoke;
-}
-.icons a:active {
-    color: purple;
-}
 
+
+/*-------------Services-------------------*/
 
 .cardd {
     width: 320px;
@@ -317,17 +310,82 @@ span{
 @keyframes appear {
     from {
         opacity: 0;
-        scale: 0.5
+        scale: 0.5;
     }
-    to{
+
+    to {
         opacity: 1;
         scale: 1;
     }
 
 }
 
-.container{
+.container {
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0% ;
+    animation-range: entry 0%;
+}
+
+
+
+/*-------------Contact-------------------*/
+
+.icons a {
+    margin: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: red;
+    display: inline-block;
+    transition: transform 0.4s ;
+}
+
+.icons a:hover {
+    color: whitesmoke;
+    transform: translateY(-8px);
+}
+
+.icons a:active {
+    color: purple;
+    font-size: 35px;
+}
+.contact-left p i{
+    color: red;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-right{
+width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgba(34, 33, 33, 0.771);
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+
+
+}
+
+.#msg{
+    color: white;
+    margin-top: -10px;
+    display: block;
+
+}
+
+.end{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    color: white;
+
 }

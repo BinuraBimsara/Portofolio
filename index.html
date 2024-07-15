@@ -19,7 +19,7 @@
     <div id="home">
         <header>
             <a href="#" class="logo">
-                <spn>B</spn>inura
+                <spn>B</spn>inura<i class="fa-regular fa-face-smile fa-bounce"></i>
             </a>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -42,17 +42,20 @@
     <!-------------ABOUT-------------------> <!-------------ABOUT------------------->
 
     <div id="about"></div>
-    <div class="container">
+    <div class="container m-5">
         <div class="row">
-            <div class="image-column col-sm-12 col-lg-3 col-md-4">
-                <img src="https://cdn.pixabay.com/photo/2020/10/18/18/37/batman-5665758_1280.png">
+            <div class="image-column col-sm-6 col-lg-3 col-md-4">
+                <img src="Pics/1720797606410.jpg">
             </div>
-            <div class="about-column col-sm-12 col-md-7 col-lg-10">
+            <div class="about-column col-sm-12 col-md-7">
                 <h1>About Myself</h1>
-                <p class="Myself">
-                    <fnt style="font-size: large; color: red; font-weight: 900;">Hello</fnt> my name is Binura and I'm a
+                <p style="font-size: 23px;" class="Myself">
+                    <fnt style="font-size: 30px; color: red; font-weight: 900;">Hello</fnt> my name is <b>Binura </b>and
+                    I'm a
                     student currently following a degree on Computer Science with a plan of completing my masters degree
-                    in Cyber Security.
+                    in Cyber Security. I'm currently studying at <a style="text-decoration: none; color: red "
+                        href="https://www.iit.ac.lk/"> <i><b>"Informatics Institute of Technology"</b></i></a>
+                    Bambalapitiya.
                 </p>
             </div>
         </div>
@@ -62,7 +65,7 @@
     <!-------------Skills-------------------> <!-------------Skills------------------->
 
     <div id="skills">
-        <div class="container">
+        <div style="padding: 100px;" class="container ">
             <div class="row">
                 <div class="col">
                     <div class="cardd">
@@ -73,17 +76,14 @@
                             <p style="font-size: ;" class="cardinfo ">
                             <ul>
                                 <li>Java</li>
-                                <li>Html</li>
-                                <li>CSS</li>
-                                <li>Python</li>
-
+                                <li>Html and CSS</li>
+                                <li>Java Script</li>
                             </ul>
                             </p>
                             <p>Check my git <i style="margin: 10px; font-size: 20px;"
                                     class="fa-solid fa-arrow-right fa-beat-fade"></i><a
-                                    style="color: red; font-size: 35px;" href=""><i
+                                    style="color: red; font-size: 35px;" href="https://x.com/binura53082"><i
                                         class="fa-brands fa-github fa-bounce"></i></a>
-
                         </div>
                     </div>
                 </div>
@@ -94,18 +94,13 @@
                         <div class="cardbdy">
                             <h5 class="cardtitle">Projects I can Handle</h5>
                             <p class="cardinfo">
-                            <ul>
+                            <ul style="list-style: square;">
                                 <li>UI/UX Designing</li>
                                 <li>Programming</li>
                                 <li>Web-Designing</li>
                                 <li>Databse Management</li>
                             </ul>
                             </p>
-                            <p>Check my git <i style="margin: 10px; font-size: 20px;"
-                                    class="fa-solid fa-arrow-right fa-beat-fade"></i><a
-                                    style="color: red; font-size: 35px;" href=""><i
-                                        class="fa-brands fa-github fa-bounce"></i></a>
-
                         </div>
                     </div>
                 </div>
@@ -116,43 +111,31 @@
                         <div class="cardbdy">
                             <h5 class="cardtitle">Other Acheivements</h5>
                             <p class="cardinfo">
-                            <ul>
+                            <ul style="list-style: circle;">
                                 <li>Completed Japanese(N5 level)</li>
                                 <li>Currently following an IT course at iCET Panadura</li>
                                 <li>Completed ALs with 3S passes in Mathematics stream</li>
                             </ul>
                             </p>
-                            <p>Check my git <i style="margin: 10px; font-size: 20px;"
-                                    class="fa-solid fa-arrow-right fa-beat-fade"></i><a
-                                    style="color: red; font-size: 35px;" href=""><i
-                                        class="fa-brands fa-github fa-bounce"></i></a>
-
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 
 
 
-
-
-
-
-
-
-
     <!-------------Contact-------------------> <!-------------Contact------------------->
 
     <div id="contact">
-        <div class="container">
-            <div class="row1">
+        <div class="container m-5">
+            <div class="row">
                 <div class="contact-left">
+                    </i></i>
                     <h1>Contact me</h1>
-                    <p>Binurabimsara04@gmail.com</p>
-                    <p>(+94) 764296586</p>
+                    <p><i class="fa-solid fa-envelope"></i> Binurabimsara04@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (+94) 764296586</p>
                     <div class="icons">
                         <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://x.com/binura53082"><i class="fa-brands fa-square-x-twitter"></i></a>
@@ -160,9 +143,21 @@
                     </div>
                 </div>
                 <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="dc3b95f2-3bcc-4b7f-ac36-b600e62b8763">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                    </form>
+                    <spaan id="msg"></spaan>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="end">
+        <p>Created by Binura<i class="fa-regular fa-copyright"></i></p>
     </div>
 
     <script type="text/javascript">
@@ -171,7 +166,6 @@
             header.classList.toggle("sticky", window.scrollY > 0)
         })
     </script>
-
 
 
 </body>
