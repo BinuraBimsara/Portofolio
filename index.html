@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,13 +22,14 @@
             <a href="#" class="logo">
                 <spn>B</spn>inura<i class="fa-regular fa-face-smile fa-bounce"></i>
             </a>
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
-
+                <i style="color: white;" class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
+            <i style="color: white;" class="fa-solid fa-bars" onclick="openmenu()"></i>
     </div>
     </header>
     <div class="container">
@@ -42,14 +44,14 @@
     <!-------------ABOUT-------------------> <!-------------ABOUT------------------->
 
     <div id="about"></div>
-    <div class="container m-5">
+    <div class="container">
         <div class="row">
-            <div class="image-column col-sm-6 col-lg-3 col-md-4">
+            <div class="image-column">
                 <img src="Pics/1720797606410.jpg">
             </div>
-            <div class="about-column col-sm-12 col-md-7">
+            <div class="about-column">
                 <h1>About Myself</h1>
-                <p style="font-size: 23px;" class="Myself">
+                <p>
                     <fnt style="font-size: 30px; color: red; font-weight: 900;">Hello</fnt> my name is <b>Binura </b>and
                     I'm a
                     student currently following a degree on Computer Science with a plan of completing my masters degree
@@ -65,7 +67,7 @@
     <!-------------Skills-------------------> <!-------------Skills------------------->
 
     <div id="skills">
-        <div style="padding: 100px;" class="container ">
+        <div style="padding-top: 100px; padding-bottom: 200px;" class="container ">
             <div class="row">
                 <div class="col">
                     <div class="cardd">
@@ -73,14 +75,14 @@
                             class="cardimg" alt="">
                         <div class="cardbdy">
                             <h5 class="cardtitle">Languages I'm Currently Studying</h5>
-                            <p style="font-size: ;" class="cardinfo ">
-                            <ul>
+                            <p class="cardinfo ">
+                            <ul style="font-size: 20px; font-weight: 600;">
                                 <li>Java</li>
                                 <li>Html and CSS</li>
                                 <li>Java Script</li>
                             </ul>
                             </p>
-                            <p>Check my git <i style="margin: 10px; font-size: 20px;"
+                            <p>Check my Git <i style="margin: 10px; font-size: 20px;"
                                     class="fa-solid fa-arrow-right fa-beat-fade"></i><a
                                     style="color: red; font-size: 35px;" href="https://x.com/binura53082"><i
                                         class="fa-brands fa-github fa-bounce"></i></a>
@@ -94,7 +96,7 @@
                         <div class="cardbdy">
                             <h5 class="cardtitle">Projects I can Handle</h5>
                             <p class="cardinfo">
-                            <ul style="list-style: square;">
+                            <ul style="list-style: square; font-size: 20px; font-weight: 600;">
                                 <li>UI/UX Designing</li>
                                 <li>Programming</li>
                                 <li>Web-Designing</li>
@@ -111,7 +113,7 @@
                         <div class="cardbdy">
                             <h5 class="cardtitle">Other Acheivements</h5>
                             <p class="cardinfo">
-                            <ul style="list-style: circle;">
+                            <ul style="list-style: circle; font-size: 19px; font-weight: 600;">
                                 <li>Completed Japanese(N5 level)</li>
                                 <li>Currently following an IT course at iCET Panadura</li>
                                 <li>Completed ALs with 3S passes in Mathematics stream</li>
@@ -129,7 +131,7 @@
     <!-------------Contact-------------------> <!-------------Contact------------------->
 
     <div id="contact">
-        <div class="container m-5">
+        <div class="container">
             <div class="row">
                 <div class="contact-left">
                     </i></i>
@@ -147,8 +149,8 @@
                         <input type="hidden" name="access_key" value="dc3b95f2-3bcc-4b7f-ac36-b600e62b8763">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="text" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn-danger">Submit</button>
+                        <textarea name="Message" rows="6" placeholder="Leave a Message"></textarea>
+                        <button type="submit" class="btn btn-danger">Send</button>
                     </form>
                     <spaan id="msg"></spaan>
                 </div>
@@ -157,7 +159,7 @@
     </div>
 
     <div class="end">
-        <p>Created by Binura<i class="fa-regular fa-copyright"></i></p>
+        <p>- Designed and develped by Binura -</i></p>
     </div>
 
     <script type="text/javascript">
@@ -165,6 +167,19 @@
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0)
         })
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = 0;
+
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+
+        }
     </script>
 
 
