@@ -10,6 +10,7 @@ html {
 }
 
 body {
+
     background-color: black;
     background-position: center;
     background-size: cover;
@@ -46,7 +47,7 @@ header {
 header.sticky {
     font-weight: 900;
     padding: 5px;
-    background: rgba(180, 96, 65, 0.897);
+    background: rgb(255, 255, 255);
 
 }
 
@@ -153,71 +154,104 @@ span {
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
 
 }
+/*===========================Appear ANIMATION===================================Appear ANIMATION=================================*/
 
-@keyframes cursor {
-    to {
-        border-left: 2px solid black;
-    }
-}
-
-@keyframes words {
-
-    0%,
-    20% {
-        content: "Welcome";
-    }
-
-    21%,
-    40% {
-        content: "To My";
-    }
-
-    41%,
-    60% {
-        content: " Personal ";
-    }
-
-    61%,
-    80% {
-        content: "Portfolio";
-    }
-
-
+#animation {
+    background-color: ;
+    margin-bottom: 50%;
+    padding: 0%;
 
 }
 
-@keyframes typing {
+#text {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 400px;
+    transform: translateY(-50%);
+}
 
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95% {
-        width: 0;
+span {
+    font-family: "Poppins", sans-serif;
+    font-size: calc(1em + 7vw);
+    padding: 0 calc(0.5rem + 0.5vw);
+    position: relative;
+    opacity: 0;
+}
+#txt{
+    top: -20px;
+    animation-name: appear;
+    animation-timing-function: ease-out;
+}
+
+span{
+    bottom: -400px;
+    animation-name: appear1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+span:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+span:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+
+span:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+
+span:nth-of-type(4) {
+    animation-delay: 0.8s;
+}
+
+span:nth-of-type(5) {
+    animation-delay: 1s;
+}
+
+span:nth-of-type(6) {
+    animation-delay: 1.2s;
+}
+
+span:nth-of-type(7) {
+    animation-delay: 1.4s;
+}
+
+span:nth-of-type(8) {
+    animation-delay: 3s;
+}
+span:nth-of-type(9) {
+    animation-delay: 3.5s;
+}
+
+@keyframes appear1 {
+    0% {
+        opacity: 0;
+        bottom: -300px;
     }
 
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    60%,
-    65%,
-    80%,
+    70% {
+        opacity: 1;
+        bottom: 15px;
+    }
+
     85% {
-        width: calc(100% + 8px);
+        opacity: 1;
+        bottom: -10px;
     }
 
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
 }
 
-
-
-
+#scroll {
+    font-size: 30px;
+    color: red;
+}
 
 
 /*-------------ABOUT-------------------*/
@@ -261,13 +295,19 @@ span {
 
 /*-------------Skills-------------------*/
 
+.cardhead{
+    position: relative;
+    font-size: 30px;
+}
+
 .cardd {
+    font-family: "Poppins", sans-serif;
     width: 320px;
     height: 400px;
     border-radius: 20px;
     overflow: hidden;
     margin: 2%;
-    border: 4px solid white;
+    border: 4px solid rgb(255, 255, 255);
     position: relative;
 }
 
@@ -284,7 +324,7 @@ span {
     height: 100%;
     bottom: -100%;
     position: absolute;
-    background: rgba(0, 0, 0, 0.512);
+    background: rgba(0, 0, 0, 0.811);
     backdrop-filter: blur(5px);
     border-radius: 15px;
     color: white;
@@ -322,8 +362,6 @@ span {
     animation-timeline: view();
     animation-range: entry 0%;
 }
-
-
 
 /*-------------Contact-------------------*/
 
