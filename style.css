@@ -157,7 +157,6 @@ span {
 /*===========================Appear ANIMATION===================================Appear ANIMATION=================================*/
 
 #animation {
-    background-color: ;
     margin-bottom: 50%;
     padding: 0%;
 
@@ -453,6 +452,7 @@ header .fa-solid {
     }
 
     header .fa-solid {
+        font-size: 25px;
         display: block;
     }
 
@@ -462,19 +462,18 @@ header .fa-solid {
     }
 
     header ul {
-        background: rgb(80, 70, 70);
+        background: rgba(109, 105, 105, 0.753);
         position: fixed;
-        top: 0;
+        top: 15%;
         right: -200px;
-        width: 200px;
-        height: 100vh;
+        width: 150px;
+        height: 40vh;
         padding-top: 50px;
         transition: 0.5s;
     }
 
     header ul {
-
-        border-radius: 8px;
+        border-radius: 20px;
         display: block;
     }
 
@@ -485,8 +484,8 @@ header .fa-solid {
 
     header ul .fa-solid {
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 15px;
+        left: 110px;
         cursor: pointer;
     }
 
