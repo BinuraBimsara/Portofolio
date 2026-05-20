@@ -41,14 +41,13 @@ header {
     transition: 0.6s;
     padding: 40px 100px;
     z-index: 10000;
-
 }
 
 header.sticky {
     font-weight: 900;
     padding: 5px;
-    background: rgb(255, 255, 255);
-
+    background: rgba(0, 0, 0, 0.733);
+    backdrop-filter: blur(10px);
 }
 
 header .logo {
@@ -90,13 +89,9 @@ header ul li a {
 
 }
 
-header.sticky .logo {
-    color: black;
-}
+header.sticky .logo {}
 
-header.sticky ul li a {
-    color: rgb(0, 0, 0);
-}
+header.sticky ul li a {}
 
 header ul li a::after {
     content: '';
@@ -124,6 +119,14 @@ header ul li a:hover::after {
     font-weight: 600;
     font-family: 'Poppins';
     min-width: 280px;
+}
+#home{
+        background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+
+}
+
+#home::before {
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.1) 0%, transparent 70%);
 }
 
 span {
@@ -154,12 +157,37 @@ span {
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
 
 }
+
+.scroll-indicator {
+    margin-top: 3rem;
+    animation: bounce 2s infinite;
+}
+
+.scroll-indicator i {
+    font-size: 1.5rem;
+    color: #ff0000;
+}
+
 /*===========================Appear ANIMATION===================================Appear ANIMATION=================================*/
 
 #animation {
-    margin-bottom: 50%;
+    margin-bottom: 0;
     padding: 0%;
+    background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
 
+#animation::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.1) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 #text {
@@ -168,28 +196,31 @@ span {
     position: relative;
     top: 400px;
     transform: translateY(-50%);
+    z-index: 1;
 }
 
 span {
     font-family: "Poppins", sans-serif;
     font-size: calc(1em + 7vw);
-    padding: 0 calc(0.5rem + 0.5vw);
+    padding: 0 0.2rem;
     position: relative;
     opacity: 0;
 }
-#txt{
+
+#txt {
     top: -20px;
     animation-name: appear;
     animation-timing-function: ease-out;
 }
 
-span{
+span {
     bottom: -400px;
     animation-name: appear1;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
+
 span:nth-of-type(1) {
     animation-delay: 0.2s;
 }
@@ -221,6 +252,7 @@ span:nth-of-type(7) {
 span:nth-of-type(8) {
     animation-delay: 3s;
 }
+
 span:nth-of-type(9) {
     animation-delay: 3.5s;
 }
@@ -272,7 +304,7 @@ span:nth-of-type(9) {
 
 .image-column img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 1000px;
 }
 
 .about-column {
@@ -284,17 +316,39 @@ span:nth-of-type(9) {
     background-color: rgba(104, 99, 99, 0.371);
     padding: 10px;
     border-radius: 15px;
-
 }
 
 .about-column h1 {
     font-weight: 800;
 }
 
+.about-column div {
+    text-align: center;
+}
+
+.Dowload-btn {
+    font-size: 20px;
+    background-color: rgba(104, 99, 99, 0.371);
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+    font-weight: 700;
+
+
+}
+
+.Dowload-btn:hover {
+    background-color: rgba(255, 0, 0, 0.918);
+    transition: 0.6s;
+
+}
+
 
 /*-------------Skills-------------------*/
 
-.cardhead{
+.cardhead {
     position: relative;
     font-size: 30px;
 }
@@ -437,6 +491,15 @@ form textarea {
 
 }
 
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 
 
 /*--------------------------CSS FOR SMALL SCREEN--------------------------------*/
@@ -447,8 +510,24 @@ header .fa-solid {
 @media only screen and (max-width: 600px) {
     span {
         margin-top: 100%;
-        font-size: 35px;
+        font-size: 45px;
 
+    }
+
+    #text {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 300px;
+        transform: translateY(-50%);
+    }
+
+    span {
+        padding: 0 0.05rem;
+    }
+
+    header .logo {
+        font-size: 30px;
     }
 
     header .fa-solid {
@@ -462,14 +541,15 @@ header .fa-solid {
     }
 
     header ul {
-        background: rgba(109, 105, 105, 0.753);
+        background: rgba(18, 17, 17);
         position: fixed;
         top: 15%;
         right: -200px;
         width: 150px;
-        height: 40vh;
+        height: 45vh;
         padding-top: 50px;
         transition: 0.5s;
+        backdrop-filter: blur(10px);
     }
 
     header ul {
@@ -487,6 +567,7 @@ header .fa-solid {
         top: 15px;
         left: 110px;
         cursor: pointer;
+        backdrop-filter: blur(10px);
     }
 
     .image-column,
