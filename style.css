@@ -377,8 +377,11 @@ span:nth-of-type(9) {
 }
 
 .image-column img {
-    width: 100%;
-    border-radius: 1000px;
+    border: 5px solid rgba(255, 0, 0, 0.3);
+    max-width: 100%;
+    width:300px;
+    height: auto;
+    border-radius: 00px;
 }
 
 .about-column {
@@ -675,18 +678,27 @@ header .fa-solid {
         backdrop-filter: blur(10px);
     }
 
+    .row {
+        justify-content: center;
+        align-items: center;
+    }
+
     .image-column,
     .about-column {
         flex-basis: 100%;
+        text-align: center;
     }
 
     .image-column img {
         margin-bottom: 50px;
+        width: 100%;
+        max-width: 250px;
     }
 
 
     .about-column p {
         font-size: 18px;
+        text-align: justify;
 
     }
 
@@ -694,7 +706,7 @@ header .fa-solid {
         flex-basis: 100%;
     }
 
-    .contact-left,
+       .contact-left,
     .contact-right {
         flex-basis: 100%;
     }
