@@ -27,6 +27,7 @@
             <ul id="sidemenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i style="color: white;" class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
@@ -70,7 +71,7 @@
                     <img src="Pics/IMG-20260113-WA0020.jpg">
                 </div>
                 <div class="about-column">
-                    <h1>About Myself</h1>
+                    <h1>About Me</h1>
                     <p>
                         My name is <b>Binura
                         </b>and
@@ -89,6 +90,180 @@
                 </div>
             </div>
         </div>
+
+        <!-------------My projects------------------->
+        <section id="projects" class="projects">
+            <div class="projects-container">
+                <div class="section-header">
+                    <h2>My Projects</h2>
+                </div>
+                <!------------------ Project 1 ------------------------------------>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>SpotIT LK <img class="project-logo" src="Pics/Icon-192.png" alt="SpotIt Logo">
+                        </h3>
+                        <h5>A Civic Engagement Platform</h5>
+                        <p class="project-tech"><strong>Tech Stack:</strong> Flutter | Dart | Firebase</p>
+                        <p class="project-description">
+                            Have you ever seen a massive pothole on your street, or a pile of uncollected garbage in
+                            your neighborhood, and wished there was an easy way to get it fixed? That is exactly why we
+                            built SpotIT LK.
+
+                            Right now, when people see a problem in their city, they usually just complain about it on
+                            Facebook or WhatsApp. The problem is, those posts rarely reach the right government
+                            officials, and they lack details like exact location coordinates.
+
+                            SpotIT LK changes that by turning your smartphone into a powerful civic tool.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/BinuraBimsara/SDGP-Project-V2" class="project-link"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                            <a href="https://teamspotit.com.lk/" class="project-link"><i
+                                    class="fas fa-external-link-alt"></i> Learn More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <img src="Pics/App SS/1.jpg" alt="E-Commerce Screenshot 1" class="carousel-img">
+                            <img src="Pics/App SS/2.jpg" alt="E-Commerce Screenshot 2" class="carousel-img">
+                            <img src="Pics/App SS/3.jpg" alt="E-Commerce Screenshot 3" class="carousel-img">
+                            <img src="Pics/App SS/4.jpg" alt="E-Commerce Screenshot 2" class="carousel-img">
+                            <img src="Pics/App SS/5.jpg" alt="E-Commerce Screenshot 3" class="carousel-img">
+                        </div>
+                        <button class="carousel-btn prev" onclick="changeCarousel(this, -1)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-btn next" onclick="changeCarousel(this, 1)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentCarouselSlide(this, 0)"></span>
+                            <span class="dot" onclick="currentCarouselSlide(this, 1)"></span>
+                            <span class="dot" onclick="currentCarouselSlide(this, 2)"></span>
+                            <span class="dot" onclick="currentCarouselSlide(this, 3)"></span>
+                            <span class="dot" onclick="currentCarouselSlide(this, 4)"></span>
+                            <span class="dot" onclick="currentCarouselSlide(this, 5)"></span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------ Project 2 ------------------------------------>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>SDG-13 Climate Change</h3>
+                        <h5>Web development group project</h5>
+                        <p class="project-tech"><strong>Tech Stack:</strong> HTML | CSS | JavaScript</p>
+                        <p class="project-description">
+                            This project is a responsive website designed and developed using HTML, CSS, and JavaScript.
+                            It
+                            features a clean and modern design with smooth animations and interactive elements. The
+                            website is optimized for both desktop and mobile devices, ensuring a seamless user
+                            experience across all platforms.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/BinuraBimsara/1st-Year-Sem-2-HTML-coursework-V2"
+                                class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://binurabimsara.github.io/1st-Year-Sem-2-HTML-coursework-V2/"
+                                class="project-link"><i class="fas fa-external-link-alt"></i>Visit Page</a>
+                        </div>
+                    </div>
+                    <div class="carousel-container carousel-horizontal">
+                        <div class="carousel">
+                            <img src="Pics/SDG-13/Screenshot 2026-05-22 191410.png" alt="E-Commerce Screenshot 1"
+                                class="carousel-img">
+                            <img src="Pics/SDG-13/Screenshot 2026-05-22 191417.png" alt="E-Commerce Screenshot 2"
+                                class="carousel-img">
+                            <img src="Pics/SDG-13/Screenshot 2026-05-22 191327.png" alt="E-Commerce Screenshot 3"
+                                class="carousel-img">
+                            <img src="Pics/SDG-13/Screenshot 2026-05-22 201357.png" alt="E-Commerce Screenshot 3"
+                                class="carousel-img">
+
+                        </div>
+                        <button class="carousel-btn prev" onclick="changeCarousel(this, -1)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-btn next" onclick="changeCarousel(this, 1)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentCarouselSlide(this, 0)"></span>
+                            <span class="dot" onclick="currentCarouselSlide(this, 1)"></span>
+                            <span class="dot" onclick="currentCarouselSlide(this, 2)"></span>
+                            <span class="dot" onclick="currentCarouselSlide(this, 3)"></span>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------ Project 3------------------------------------>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>SpotIT LK <img class="project-logo" src="Pics/Icon-192.png" alt="SpotIt Logo">
+                        </h3>
+                        <h5>A Civic Engagement Platform</h5>
+                        <p class="project-tech"><strong>Tech Stack:</strong> Flutter, Dart, Firebase</p>
+                        <p class="project-description">
+                            Have you ever seen a massive pothole on your street, or a pile of uncollected garbage in
+                            your neighborhood, and wished there was an easy way to get it fixed? That is exactly why we
+                            built SpotIT LK.
+
+                            Right now, when people see a problem in their city, they usually just complain about it on
+                            Facebook or WhatsApp. The problem is, those posts rarely reach the right government
+                            officials, and they lack details like exact location coordinates.
+
+                            SpotIT LK changes that by turning your smartphone into a powerful civic tool.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://teamspotit.com.lk/" class="project-link"><i
+                                    class="fas fa-external-link-alt"></i> Learn More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-container carousel-horizontal">
+                        <div class="carousel">
+                            <img src="Pics/Task Manager/Screenshot 2026-05-22 205257.png" alt="E-Commerce Screenshot 1"
+                                class="carousel-img">
+                            <img src="Pics/Task Manager/Screenshot 2026-05-22 205345.png" alt="E-Commerce Screenshot 2"
+                                class="carousel-img">
+                            <img src="Pics/Task Manager/Screenshot 2026-05-22 212053.png" alt="E-Commerce Screenshot 3"
+                                class="carousel-img">
+                        </div>
+                        <button class="carousel-btn prev" onclick="changeCarousel(this, -1)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-btn next" onclick="changeCarousel(this, 1)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentCarouselSlide(this, 0)"></span>
+                            <span class="dot" onclick="currentCarouselSlide(this, 1)"></span>
+                            <span class="dot" onclick="currentCarouselSlide(this, 2)"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------ Project 4 ------------------------------------>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <h5>An Interactive Web Application</h5>
+                        <p class="project-tech"><strong>Tech Stack:</strong> HTML | CSS | JavaScript | Bootstrap</p>
+                        <p class="project-description">
+                            This project is a responsive website designed and developed using HTML, CSS, JavaScript, and
+                            Bootstrap. It features a clean and modern design with smooth animations and interactive
+                            elements. The website is optimized for both desktop and mobile devices, ensuring a seamless
+                            user experience across all platforms.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/BinuraBimsara/Portofolio" class="project-link"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                            <a href="#home" class="project-link"><i class="fas fa-external-link-alt"></i> Learn More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <img src="Pics/you.webp" E-Commerce Screenshot 1" class="carousel-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <!-------------SKILLS------------------->
@@ -152,6 +327,7 @@
                         <p><i class="fa-solid fa-envelope"></i> Binurabimsara04@gmail.com</p>
                         <p><i class="fa-solid fa-phone"></i> (+94) 769695924</p>
                         <div class="icons">
+                            <a href="https://www.linkedin.com/in/binura-narayana-2aba73352/"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                             <a href="https://x.com/binura53082"><i class="fa-brands fa-square-x-twitter"></i></a>
                             <a href="https://github.com/BinuraBimsara"><i class="fa-brands fa-github"></i></a>

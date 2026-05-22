@@ -326,16 +326,6 @@ span:nth-of-type(9) {
         bottom: -300px;
     }
 
-    70% {
-        opacity: 1;
-        bottom: 15px;
-    }
-
-    85% {
-        opacity: 1;
-        bottom: -10px;
-    }
-
     100% {
         opacity: 1;
         bottom: 0;
@@ -379,13 +369,14 @@ span:nth-of-type(9) {
 .image-column img {
     border: 5px solid rgba(255, 0, 0, 0.3);
     max-width: 100%;
-    width:300px;
+    width: 300px;
     height: auto;
     border-radius: 00px;
 }
 
 .about-column {
     flex-basis: 60%;
+    text-align: justify;
 }
 
 .about-column p {
@@ -426,6 +417,196 @@ span:nth-of-type(9) {
 
 }
 
+/*-------------My Projects-------------------*/
+
+.projects-container {
+    text-align: center;
+    color: white;
+    font-family: Poppins;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 5%;
+
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: #ff0000;
+    background: rgba(255, 0, 0, 0.08);
+}
+
+.project-info {
+    flex: 1;
+    text-align: left;
+}
+
+.project-logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 20%;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.project-info h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(#eee52b, #ff6b6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-info h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ddac2e;
+}
+
+
+.project-tech {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    background: rgba(19, 18, 18, 0.2);
+    border: 1px solid #ff0000;
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: #ad0f0f;
+}
+
+/* Carousel Container */
+.carousel-container {
+    flex: 1;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+    min-height: 300px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+    display: none;
+    animation: fadeIn 0.5s ease;
+    border-radius: 20px;
+}
+
+.carousel-img.active {
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgb(233, 6, 6);
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: #ff0000;
+    color: black;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #ff0000;
+    width: 30px;
+    border-radius: 5px;
+}
+
+/* Horizontal Carousel (for landscape images) */
+.carousel-horizontal .carousel-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
 
 /*-------------Skills-------------------*/
 .skills-container {
@@ -438,6 +619,9 @@ span:nth-of-type(9) {
 }
 
 .section-header {
+    font-family: Poppins;
+    font-weight: 700;
+    color: white;
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -524,10 +708,9 @@ span:nth-of-type(9) {
 
 .icons a:active {
     color: purple;
-    font-size: 35px;
 }
 
-.contact-left h1{
+.contact-left h1 {
     font-size: 2.5rem;
     font-family: Poppins;
     font-weight: 700;
@@ -605,6 +788,11 @@ form textarea {
 header .fa-solid {
     display: none;
 }
+
+@media only screen and (max-width: 800px) {
+    .project-card {
+        flex-direction: column;
+    }
 
 @media only screen and (max-width: 600px) {
     span {
@@ -706,7 +894,7 @@ header .fa-solid {
         flex-basis: 100%;
     }
 
-       .contact-left,
+    .contact-left,
     .contact-right {
         flex-basis: 100%;
     }
