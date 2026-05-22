@@ -792,9 +792,99 @@ header .fa-solid {
 @media only screen and (max-width: 800px) {
     .project-card {
         flex-direction: column;
+        padding: 1.5rem;
+        gap: 1.5rem;
     }
 
+    .projects-container {
+        padding: 60px 5%;
+    }
+
+    .project-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-info h5 {
+        font-size: 16px;
+    }
+
+    .project-description {
+        font-size: 14px;
+    }
+
+    .carousel-container {
+        min-height: 250px;
+    }
+
+    .carousel-btn {
+        font-size: 1.2rem;
+        padding: 8px 12px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+    .project-card {
+        padding: 1rem;
+        gap: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .projects-container {
+        padding: 50px 3%;
+    }
+
+    .project-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-info h5 {
+        font-size: 14px;
+    }
+
+    .project-tech {
+        font-size: 0.85rem;
+    }
+
+    .project-description {
+        font-size: 13px;
+        margin-bottom: 1rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .project-link {
+        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .carousel-container {
+        min-height: 200px;
+    }
+
+    .carousel-btn {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+
+    .carousel-dots {
+        bottom: 10px;
+        gap: 0.3rem;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .dot.active {
+        width: 25px;
+    }
+
     span {
         margin-top: 100%;
         font-size: px;
@@ -889,6 +979,7 @@ header .fa-solid {
         text-align: justify;
 
     }
+    
 
     #skills .container {
         flex-basis: 100%;
@@ -903,6 +994,42 @@ header .fa-solid {
 }
 
 @media only screen and (max-width: 380px) {
+    .project-card {
+        padding: 0.8rem;
+        gap: 0.8rem;
+    }
+
+    .projects-container {
+        padding: 40px 2%;
+    }
+
+    .project-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-info h5 {
+        font-size: 12px;
+    }
+
+    .project-description {
+        font-size: 12px;
+        margin-bottom: 0.8rem;
+    }
+
+    .carousel-container {
+        min-height: 150px;
+    }
+
+    .carousel-btn {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+    }
+
+    .project-link {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.8rem;
+    }
+
     span {
         font-size: 25px;
     }
